@@ -1,8 +1,6 @@
-# jupyterlab-vim
+# @mrqubo/jupyterlab-vim
 
-[![npm version](https://badge.fury.io/js/jupyterlab_vim.svg)](https://www.npmjs.com/package/jupyterlab_vim)
-[![Build Status](https://travis-ci.org/jwkvam/jupyterlab-vim.svg?branch=master)](https://travis-ci.org/jwkvam/jupyterlab-vim)
-[![npm downloads](https://img.shields.io/npm/dw/jupyterlab_vim.svg)](https://www.npmjs.com/package/jupyterlab_vim)
+This is a fork of [jwkvam/jupyterlab-vim](https://github.com/jwkvam/jupyterlab-vim). See [About this fork](#about-this-fork).
 
 Notebook cell vim bindings
 
@@ -13,10 +11,15 @@ Notebook cell vim bindings
 I want to acknowledge [Alisue](https://github.com/lambdalisue) and his excellent work creating [vim bindings](https://github.com/lambdalisue/jupyter-vim-binding) for Jupyter notebooks.
 I hope this extension can meet the high bar his work set.
 
-## Modes
+## About this fork
 
-This extension splits Jupyter edit mode into two modes: Vim command mode and Vim insert mode.
-Three editing modes now exist: Jupyter command, Vim command, and Vim insert.
+I've created this fork because I'm using Jupyter command mode and I find Vim command mode not useful, I want it to work more like a typical normal mode from Vim.
+
+### Changes
+
+- Moving past editor buffer doesn't move cursor to the previous/next cell.
+- Vim command mode can be exited with Escape.
+- Copy fileeditor settings.
 
 ## Install
 ### Prerequisites
@@ -75,6 +78,7 @@ Shortcuts this extension introduces:
 | Command/Ctrl-2 | Markdown Cell Mode        |
 | Command/Ctrl-3 | Raw Cell Mode             |
 | Shift-Escape   | Leave Vim Mode            |
+| Escape         | Leave Vim Mode            |
 
 ### Jupyter command bindings
 
